@@ -17,6 +17,7 @@
 ### Script usage:
 
 bash mich.sh [-h] [-i] [-f] [-id] [-fd] [-is] [-fs] [-u] [-ud] [-us]
+
 -h , --help Show help information
 -i , --install Install Dnsmasq + SNI Proxy
 -f , --fastinstall Fast install Dnsmasq + SNI Proxy
