@@ -16,7 +16,7 @@
 
 ### Script usage:
 
-bash mich.sh [-h] [-i] [-f] [-id] [-fd] [-is] [-fs] [-u] [-ud] [-us]
+bash dnsmasq_sniproxy.sh [-h] [-i] [-f] [-id] [-fd] [-is] [-fs] [-u] [-ud] [-us]
 
 -h , --help Show help information
 -i , --install Install Dnsmasq + SNI Proxy
@@ -31,17 +31,17 @@ bash mich.sh [-h] [-i] [-f] [-id] [-fd] [-is] [-fs] [-u] [-ud] [-us]
 
 ### Fast installation (recommended):
 ``` Bash
-wget --no-check-certificate -O mich.sh https://raw.githubusercontent.com/m1chtv/michns/master/mich.sh && bash mich.sh -f
+wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent.com/m1chtv/michns/master/dnsmasq_sniproxy.sh && bash dnsmasq_sniproxy.sh -f
 ```
 
 ### Normal installation:
 ``` Bash
-wget --no-check-certificate -O mich.sh https://raw.githubusercontent.com/m1chtv/michns/master/mich.sh && bash mich.sh -i
+wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent.com/m1chtv/michns/master/dnsmasq_sniproxy.sh && bash dnsmasq_sniproxy.sh -i
 ```
 
 ### Uninstallation method:
 ``` Bash
-wget --no-check-certificate -O mich.sh https://raw.githubusercontent.com/m1chtv/michns/master/mich.sh && bash mich.sh -u
+wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent.com/m1chtv/michns/master/dnsmasq_sniproxy.sh && bash dnsmasq_sniproxy.sh -u
 ```
 
 ### How to use:
