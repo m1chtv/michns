@@ -6,7 +6,7 @@
 
 * Purpose: Allow VPS that cannot watch streaming media to watch (prerequisite: one of the VPS must be able to watch streaming media).
 
-* Features: The script unlocks `xbox openai spotify`[etc.](https://github.com/m1chtv/michns/blob/master/proxy-domains.txt) by default. If you need to add or delete streaming domains, please edit the files `/etc/dnsmasq.d/custom_mich.conf` and `/etc/sniproxy.conf`
+* Features: The script unlocks `xbox openai spotify`[etc.](https://github.com/m1chtv/michns/blob/master/proxy-domains.txt) by default. If you need to add or delete domains, please edit the files `/etc/dnsmasq.d/custom_mich.conf` and `/etc/sniproxy.conf`
 
 * Script supported systems: CentOS6+, Debian8+, Ubuntu16+
 
@@ -66,7 +66,7 @@ You can test it through other servers `telnet 1.2.3.4 53`
 - Domain name resolution test
 
 After trying to configure dns with other servers, resolve the domain name: nslookup xbox.com to determine whether the IP is the xbox proxy machine IP
-If the nslookup command does not exist, centos installation: `yum install -y bind-utils` ubuntu&debian installation: `apt-get -y install dnsutils`
+If the nslookup command does not exist, centos installation: `yum install -y bind-utils` ubuntu & debian installation: `apt-get -y install dnsutils`
 
 - Solution to systemd-resolve service occupying port 53
 Use `netstat -tlunp|grep 53` to find that port 53 is occupied by systemd-resolved
