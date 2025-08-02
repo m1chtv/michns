@@ -1,5 +1,5 @@
-raw.githubusercontent.com
-github.com
+remotedesktop.google.com
+mariadb.com
 llama.com
 galxe.com
 checks.google.com
