@@ -102,6 +102,20 @@ ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
 systemctl restart systemd-resolved.service
 ```
 
+# Small Security tip for public DNS
+
+```
+git clone https://github.com/m1chtv/michns.git
+cd michns
+chmod +x setup-nftables.sh
+sudo ./setup-nftables.sh
+
+sudo apt install nftables -y
+sudo systemctl enable nftables
+sudo nft list ruleset > /etc/nftables.conf
+```
+
+
 ---
 
 **_This script is only for Sanctions Bypass_**
