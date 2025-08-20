@@ -1,3 +1,7 @@
+de.archive.ubuntu.com
+report.ml.youngjoygame.com
+login.ml.youngjoygame.com
+genspark.ai
 cachyos.org
 langchain.com
 remotedesktop.google.com
