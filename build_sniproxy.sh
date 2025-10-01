@@ -2,14 +2,14 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
-#This script is only used to compile sniproxy
+#本脚本仅做编译sniproxy使用
 
 red='\033[0;31m'
 green='\033[0;32m'
 yellow='\033[0;33m'
 plain='\033[0m'
 
-[[ $EUID -ne 0 ]] && echo -e "[${red}Error${plain}] Please use the root user to execute the script!" && exit 1
+[[ $EUID -ne 0 ]] && echo -e "[${red}Error${plain}] 请使用root用户来执行脚本!" && exit 1
 
 check_sys(){
     local checkType=$1
@@ -101,7 +101,7 @@ error_detect_depends(){
 }
 
 install_dependencies(){
-    echo "Install dependent software..."
+    echo "安装依赖软件..."
     if check_sys packageManager yum; then
         echo -e "[${green}Info${plain}] Checking the EPEL repository..."
         if [ ! -f /etc/yum.repos.d/epel.repo ]; then
@@ -147,8 +147,8 @@ if [ -e sniproxy-0.6.1 ]; then
     rm -rf sniproxy-0.6.1
 fi
 download /tmp/sniproxy-0.6.1.tar.gz https://github.com/dlundquist/sniproxy/archive/refs/tags/0.6.1.tar.gz
-#The latest code requires autoconf version at least 2.71, temporarily using version 0.6.1 source code
-#Reference compilation link: https://www.cnblogs.com/hucat/articles/16828816.html
+#最新代码需要autoconf版本至少为2.71，暂时使用0.6.1版本源码
+#参考编译链接：https://www.cnblogs.com/hucat/articles/16828816.html
 tar -zxf sniproxy-0.6.1.tar.gz
 cd sniproxy-0.6.1
 if check_sys packageManager yum; then
