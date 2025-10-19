@@ -6,7 +6,7 @@ Wants=network-online.target
 [Service]
 Type=forking
 User=root
-ExecStart=/usr/sbin/sniproxy -c /etc/mich.conf
+ExecStart=/usr/sbin/sniproxy -c /etc/sniproxy.conf
 Restart=always
 RestartSec=1s
 
