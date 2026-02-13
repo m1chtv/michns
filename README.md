@@ -81,7 +81,7 @@ If the nslookup command does not exist, centos installation: `yum install -y bin
 
 - Solution to systemd-resolve service occupying port 53
   Use `netstat -tlunp|grep 53` to find that port 53 is occupied by systemd-resolved
-  Modify `/etc/systemd/resolved.conf`
+  Modify `sudo nano /etc/systemd/resolved.conf`
 
 ```
 [Resolve]
